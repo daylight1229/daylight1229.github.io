@@ -1,0 +1,158 @@
+.pic1{
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 60px;
+	width: 350px;
+	height: 300px;
+	border-radius: 30px;
+}
+.pic2{
+	position:absolute;
+	margin-top: 450px;
+	margin-left: 60px;
+	width: 350px;
+	height: 300px;
+	border-radius: 30px;
+}
+.pic3{
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 475px;
+	width: 300px;
+	height: 300px;
+	border-radius: 30px;
+}
+.pic4{
+	position: absolute;
+	margin-top: 448px;
+	margin-left: 475px;
+	width: 300px;
+	height: 300px;
+	border-radius: 30px;
+}
+.pic5{
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 840px;
+	width: 400px;
+	height: 300px;		
+	border-radius: 30px;
+}
+.pic6{
+	position: absolute;
+	margin-top: 450px;
+	margin-left: 840px;
+	width: 400px;
+	height: 300px;	
+	border-radius: 30px;
+}
+.lanmi1{
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 60px;
+	width: 350px;
+	height: 300px;
+	border-radius: 30px;
+	opacity: 0;
+	font-weight: bolder;
+	font-size: 40px;
+	text-align: center;
+	line-height:280px;
+	color: white;
+	background-color: black;
+}
+
+.lanmi2{
+	position:absolute;
+	margin-top: 450px;
+	margin-left: 60px;
+	width: 350px;
+	height: 300px;
+	border-radius: 30px;
+	opacity: 0;
+	font-weight: bolder;
+	font-size: 40px;
+	text-align: center;
+	line-height:280px;
+	color: white;
+	background-color: black;
+}
+
+.lanmi3{
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 475px;
+	width: 300px;
+	height: 300px;
+	border-radius: 30px;
+	opacity: 0;
+	font-weight: bolder;
+	font-size: 40px;
+	text-align: center;
+	line-height:280px;
+	color: white;
+	background-color: black;
+}
+.lanmi4{
+	position: absolute;
+	margin-top: 448px;
+	margin-left: 475px;
+	width: 300px;
+	height: 300px;
+	border-radius: 30px;
+	opacity: 0;
+	font-weight: bolder;
+	font-size: 40px;
+	text-align: center;
+	line-height:280px;
+	color: white;
+	background-color: black;
+}
+.lanmi5{
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 840px;
+	width: 400px;
+	height: 300px;		
+	border-radius: 30px;
+	opacity: 0;
+	font-weight: bolder;
+	font-size: 40px;
+	text-align: center;
+	line-height:280px;
+	color: white;
+	background-color: black;
+}
+.lanmi6{
+	position: absolute;
+	margin-top: 450px;
+	margin-left: 840px;
+	width: 400px;
+	height: 300px;	
+	border-radius: 30px;
+	opacity: 0;
+	font-weight: bolder;
+	font-size: 40px;
+	text-align: center;
+	line-height:280px;
+	color: white;
+	background-color: black;
+}
+.lanmi1:hover{
+	opacity: 0.5;
+}
+.lanmi2:hover{
+	opacity: 0.5;
+}
+.lanmi3:hover{
+	opacity: 0.5;
+}
+.lanmi4:hover{
+	opacity: 0.5;
+}
+.lanmi5:hover{
+	opacity: 0.5;
+}
+.lanmi6:hover{
+	opacity: 0.5;
+}

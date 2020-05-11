@@ -1,0 +1,12 @@
+.footerbg{
+	width: 100%;
+	background-color: #02558B;
+	height: 150px;
+	position: absolute;
+	margin-top:900px;
+}
+.footertext{
+	text-align: center;
+	color:white;
+	margin-top: 50px;
+}

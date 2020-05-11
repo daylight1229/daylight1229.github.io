@@ -1,0 +1,13 @@
+.ctitle{
+	font-size: 20px;
+	color:#02558B;
+	font-style: italic;
+	font-family: "Times New Roman";
+	font-weight: bold;
+}
+.ctext{
+	font-family: "微軟正黑體";
+}
+.anmi1:hover {
+	opacity : 1;
+	transform : scale(1.05);
