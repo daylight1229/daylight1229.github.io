@@ -1,0 +1,257 @@
+body{
+	background-color: rgb(75,157,212,0.9);
+}
+.big{	
+	width: 100%;
+	height: 1400px;
+	background-color: rgb(75,157,212,0.9);
+}
+.border1{
+	border-style: none;
+  	background-color: rgb(2,85,139,0.95);
+  	width: 100%;
+  	height: 700px;
+  	margin-top: 50px; 
+
+}
+.border2{
+	float: left;
+	width: 40%;
+	height: 700px;
+}
+.my{
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
+	align-items: center;
+	width: 400px;
+	height: 400px;
+	margin: 100px 200px 0px 100px ;
+
+}
+.my1{
+	margin: 100px 100px 0px 100px ;
+}
+.border3{
+	width: 60%;
+	height: 700px;
+	float: left;
+}
+.slo{
+	font-family: "Times New Roman";
+	font-size: 44px;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	padding-left: 120px;
+}
+.font1{
+	font-family: "微軟正黑體";
+	font-size: 22px;
+	color: white;
+	font-weight: normal;
+	padding: 0px 98px;
+}
+.font2{
+	font-family: "微軟正黑體";
+	color: white;
+	font-size: 28px;
+	font-weight: lighter;
+}
+.font3{
+	font-family: "微軟正黑體";
+	color: white;
+	font-size: 16px;
+	padding: 10px;
+	font-weight: bolder;
+}
+.font4{
+	font-family: "微軟正黑體";
+	color: white;
+	font-size: 28px;
+	padding: 20px;
+	font-weight: bolder;
+}
+.font5{
+	font-family: "微軟正黑體";
+	color: white;
+	font-size: 28px;
+	padding: 0px;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+.font6{
+	font-family: "微軟正黑體";
+	color: black;
+	font-size: 16px;
+}
+.font7{
+	font-family: "微軟正黑體";
+	color: white;
+	font-size: 20px;
+}
+.pic1{
+	border-radius: 50%;
+	margin: 50px 0px 0px 100px;
+}
+.bt1{
+	border-color: white;
+	border-width: 1px;
+	border-style: solid;
+}
+.skillbox{
+	box-sizing: border-box;
+	flex-direction: row;
+	margin: 5px;
+	padding: 5px;
+	color: white;
+	font-family: "微軟正黑體";
+	font-size: 22px;
+}
+.title, .course, .club,.contact,.work{
+	color:	#844200;
+	font-family: '微軟正黑體';
+	font-weight: bolder;
+	font-size: 40px;
+}
+.skill{
+	background-color: #FFCC1F;
+	padding: 5px;
+	box-sizing: border-box;
+	color:white;
+	border-radius: 50px;
+}
+.skill_level{
+	background-color: #0A74B2;
+	border-radius: 50px;
+	text-align: right;
+	height:20px;
+	z-index: 1;
+}
+.c{
+	animation-name: skillc;
+	animation-duration: 3s;
+}
+.java{
+	animation-name: skilljava;
+	animation-duration: 3s;
+}
+.html{
+	animation-name: skillhtml;
+	animation-duration: 3s;
+}
+.jsp{
+	animation-name: skilljsp;
+	animation-duration: 3s;
+}
+.photo{
+	animation-name: skillphoto;
+	animation-duration: 3s;
+}
+@keyframes skillc{
+	0%{width: 0%}
+	100%{width: 70%}
+}
+@keyframes skilljava{
+	0%{width: 0%}
+	100%{width: 75%}
+}
+@keyframes skillhtml{
+	0%{width: 0%}
+	100%{width: 84%}
+}
+@keyframes skilljsp{
+	0%{width: 0%}
+	100%{width: 68%}
+}
+@keyframes skillphoto{
+	0%{width: 0%}
+	100%{width: 90%}
+}
+.footerbg{
+	background-color: #02558B;
+	width: 100%;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.footer{
+    text-align: center;
+    color: white;
+    font-family: "微軟正黑體";
+    font-size: 16px;
+}
+.ctitle{
+	font-size: 19.5px;
+	color:#02558B;
+	font-style: italic;
+	font-family: "Times New Roman";
+	font-weight: bold;
+}
+.ctext{
+	font-family: "微軟正黑體";
+}
+.anmi1:hover {
+	opacity : 1;
+	transform : scale(1.05);
+}
+.label{
+  	background-color: #FFCC1F;
+  	color: 	black;
+  	cursor: pointer;
+ 	padding: 18px;
+ 	width:90%;
+  	border: none;
+  	text-align: left;
+  	outline: none;
+  	font-size: 15px;
+  	transition: 0.4s;
+  	margin:10px;
+  	font-family: "微軟正黑體";
+  	font-weight: bolder;
+}
+.panel{
+  	padding: 0 18px;
+  	background-color: #FFAD42;
+  	max-height: 0;
+  	overflow: hidden;
+  	transition: max-height 0.2s ease-out;
+  	width: 80%;
+  	font-size: 14px;
+  	color: black;
+}
+.small{
+	width: 50%;
+	height:150px;
+	float: left;
+	text-align:center;
+	margin:10px 0px 0px 360px ;
+}
+#bars {
+	margin: 2em auto;
+	max-width: 600px;
+	overflow: hidden;
+}
+
+.bar {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.bar h3 {
+	font-size: 1.4em;
+	font-weight: normal;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: '微軟正黑體';
+}
+.bar-circle {
+	display: block;
+	margin: 0.7em auto;
+}
+.introduction{
+	width: 800px;
+	height: 190px;
+	align-items: center;
+}

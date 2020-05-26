@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<title>CK-Resume</title>
+		<style>
+			@import"assets/css/rescss.css";
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			<div class="all">
+				<div class="border1">
+					<div class="border2">
+						<div class="my">
+							<img class="pic1" src="img/selfie/selfie.jpg" alt="Selfie" style="width: 200px; height: 200px; display:block;"><br><br>
+							<span class="font1">Tseng Chen Kuang</span>
+						</div><br><br><br>
+						<span class="slo">"Life is a Journey"</span>
+					</div>
+					<div class="border3">
+						<div class="my1"><p class="font2">My name is Tseng Chen Kuang<br><br>Study in CYCU's College of Bussiness<br><br>Major in Information of Management</p><hr><br>
+						<span class="font2">Phone:&emsp;&emsp;&emsp;&emsp;&emsp;0978251001</span><br><br>
+						<span class="font2">Email:&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&nbsp;kuang1231@gmail.com</span><br><br>
+						<span class="font2">Date of Birth:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;December 31th, 1999</span><br><br><br>
+						<a href="https://daylight1229.github.io/selfintro/index.html" target="_blank">
+						<img style="width: 90px;height: 90px; padding: 20px; "src="img/icon/intro.png"></a>
+						<a href="https://www.facebook.com/people/%E6%9B%BE%E6%99%A8%E5%85%89/100021441362997" target="_blank">
+						<img style="width: 90px;height: 90px; padding: 20px; "src="img/icon/facebook.png"></a>
+						<a href="https://www.instagram.com/kuang1229/" target="_blank">
+						<img style="width: 90px;height: 90px; padding: 20px; "src="img/icon/instagram.png"></a>
+						<a href="https://github.com/daylight1229" target="_blank">
+						<img style="width: 90px;height: 90px; padding: 20px; "src="img/icon/github.png"></a>
+						<a href="mailto:kuang1231@gmail.com" target="_blank">
+						<img style="width: 90px;height: 90px; padding: 20px; "src="img/icon/gmail.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br><div><span class="font5">Programming Skills</span><br><br>
+		<div class="skillbox ">C#
+			<div class="skill">
+				<div class="skill_level c" style="width: 70%">
+					70%
+				</div>
+			</div>
+		</div>
+		<div class="skillbox">Java
+			<div class="skill ">
+				<div class="skill_level java" style="width: 75%">
+					75%
+				</div>
+			</div>
+		</div>
+		<div class="skillbox">HTML&nbsp;/&nbsp;CSS&nbsp;/&nbsp;JS
+			<div class="skill ">
+				<div class="skill_level html" style="width: 84%">
+					84%
+				</div>
+			</div>
+		</div>
+		<div class="skillbox">JSP
+			<div class="skill ">
+				<div class="skill_level jsp" style="width: 68%">
+					68%
+				</div>
+			</div>
+		</div>
+		<div class="skillbox">Python
+			<div class="skill ">
+				<div class="skill_level photo" style="width: 90%">
+					90%
+				</div>
+			</div>
+		</div>
+	</div>
+	<section>
+		<div class="small">
+			<div id="bars">
+				<div class="bar" data-percent="90">
+					<span class="font7">Adobe Ps</span>
+					<canvas class="bar-circle" width="70" height="70"></canvas>
+				</div>
+				<div class="bar" data-percent="85">
+					<span class="font7">Adobe Pr</span>
+					<canvas class="bar-circle" width="70" height="70"></canvas>
+				</div>
+				<div class="bar" data-percent="76">
+					<span class="font7">Adobe Ae</span>
+					<canvas class="bar-circle" width="70" height="70"></canvas>
+				</div>
+				
+				<script>
+					(function() {
+				
+				var Progress = function( element ) {
+					
+					this.context = element.getContext( "2d" );
+					this.refElement = element.parentNode;
+					this.loaded = 0;
+					this.start = 4.69;
+					this.width = this.context.canvas.width;
+					this.height = this.context.canvas.height;
+					this.total = parseInt( this.refElement.dataset.percent, 10 );
+					this.timer = null;
+					
+					this.diff = 0;
+					
+						this.init();
+				};
+				
+				Progress.prototype = {
+					init: function() {
+						var self = this;
+						self.timer = setInterval(function() {
+								self.run();
+						}, 25);
+					},
+					run: function() {
+						var self = this;
+						
+							self.diff = ( ( self.loaded / 100 ) * Math.PI * 2 * 10 ).toFixed( 2 );
+						self.context.clearRect( 0, 0, self.width, self.height );
+						self.context.lineWidth = 10;
+						self.context.fillStyle = "#000";
+						self.context.strokeStyle = "#FFD917";
+						self.context.textAlign = "center";
+						
+						self.context.fillText( self.loaded + "%", self.width * .5, self.height * .5 + 2, self.width );
+						self.context.beginPath();
+						self.context.arc( 35, 35, 30, self.start, self.diff / 10 + self.start, false );
+						self.context.stroke();
+						
+						if( self.loaded >= self.total ) {
+							clearInterval( self.timer );
+						}
+						
+						self.loaded++;
+					}
+				};
+				
+				var CircularSkillBar = function( elements ) {
+					this.bars = document.querySelectorAll( elements );
+					if( this.bars.length > 0 ) {
+						this.init();
+						}
+				};
+				
+				CircularSkillBar.prototype = {
+					init: function() {
+						this.tick = 25;
+						this.progress();
+						
+					},
+					progress: function() {
+						var self = this;
+						var index = 0;
+						var firstCanvas = self.bars[0].querySelector( "canvas" );
+						var firstProg = new Progress( firstCanvas );
+						
+						
+						
+						var timer = setInterval(function() {
+							index++;
+								
+							var canvas = self.bars[index].querySelector( "canvas" );
+							var prog = new Progress( canvas );
+							
+							if( index == self.bars.length ) {
+									clearInterval( timer );
+							}
+							
+						}, self.tick * 100);
+							
+					}
+				};
+				
+				document.addEventListener( "DOMContentLoaded", function() {
+					var circularBars = new CircularSkillBar( "#bars .bar" );
+				});
+				
+				})();
+				</script>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+<section style="width: 98%;">
+<div class="ca"><span class="font5">Activity & Part Time Job Experience</span></div>
+<div class="card-deck" style="padding: 50px;">
+	<div class="card anmi1">
+		<img class="card-img-top" src="img/exp/basketball.jpg" style="width: 100%; height: 60%;">
+		<div class="card-body word">
+			<h5 class="ctitle">Basketball Team</h5>
+			<p class="ctext">
+				Join basketball team at senior highschool.
+			</p>
+		</div>
+	</div>
+	<div class="card anmi1">
+		<img class="card-img-top exp-img" src="img/exp/camp.jpg" style="width: 100%; height: 60%;">
+		<div class="card-body word">
+			<h5 class="ctitle">HBC Youth Summer Camp</h5>
+			<p class="ctext">
+				Participate in the youth camp which is held by Hsinchu Baptist Church.
+			</p>
+		</div>
+	</div>
+	<div class="card anmi1">
+		<img class="card-img-top exp-img" src="img/exp/drama.jpg" style="width: 100%; height: 60%;">
+		<div class="card-body word">
+			<h5 class="ctitle">HBC Christmas Drama</h5>
+			<p class="ctext">
+				Having drama performance in Hsinchu Baptist Church's Christmas Special Event.
+			</p>
+		</div>
+	</div>
+	<div class="card anmi1">
+		<img class="card-img-top exp-img" src="img/exp/library.jpg" style="width: 100%; height: 60%;">
+		<div class="card-body word">
+			<h5 class="ctitle">Staff in CYCU Library</h5>
+			<p class="ctext">
+				Staff in CYCU Library, usually serving readers and dealing with their requests.
+			</p>
+		</div>
+	</div>
+</div>
+</section>
+<section>
+<div><span class="font5">Course</span></div><br><br>
+<script type="text/javascript">
+var button = document.getElementById('show_button')
+button.addEventListener('click',hideshow,false);
+function hideshow() {
+document.getElementById('hidden-div').style.display = 'block';
+this.style.display = 'none'
+}
+</script>
+<button class="label" id="show_button">Fall Semester 2018&nbsp;&nbsp;|&nbsp;&nbsp;Class of Management</button>
+<div class="panel" id="hidden-div">
+	<img style="width: 200px; height: 200px;" src="img/course/dot.jpg">
+	<span class="font6">Volunteer of robot teaching course</span>
+</div>
+<button class="label">Spring Semester 2019&nbsp;&nbsp;|&nbsp;&nbsp;Class of Introduction to Business Management</button>
+<div class="panel">
+	<img style="width: 200px; height: 200px;" src="img/course/coffee.jpg">
+	<span class="font6">Volunteer of countryside coffee charity sale</span>
+</div>
+<button class="label">Fall Semester 2019&nbsp;&nbsp;|&nbsp;&nbsp;Class of Network Programming Language</button>
+<div class="panel">
+	<img style="width: 200px; height: 200px;" src="img/course/cloth.jpg">
+	<span class="font6">Make a cloth selling shopping website with my classmate</span>
+</div>
+<button class="label">Spring Semester 2020&nbsp;&nbsp;|&nbsp;&nbsp;Class of Multimedia Programming</button>
+<div class="panel">
+	<img style="width: 200px; height: 200px;" src="img/course/lib.jpg">
+	<span class="font6">Make a project to promote the library during the Multimedia Programming class</span>
+</div>
+<script>
+var acc = document.getElementsByClassName("label");0.
+var i;
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var panel = this.nextElementSibling;
+if (panel.style.maxHeight){
+panel.style.maxHeight = null;
+} else {
+panel.style.maxHeight = panel.scrollHeight + "px";
+}
+});
+}
+</script>
+</section>
+<footer class="footerbg">
+<div class="footer">
+	Copyright © 2020 by Chen Kuang,Tseng <br>
+	Tel:&nbsp;+886-978251001 | Email:&nbsp;kuang1231@gmail.com
+</div>
+</footer>
+</body>
+</html>
